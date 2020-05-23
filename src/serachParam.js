@@ -15,13 +15,13 @@ export default function  SearchParam (){
 
     const [pets , setPets ] =  useState([]);
 
+    //Fecth Pets wrt to input Data from Form  .
     async function getPets() {
         const { animals } = await pet.animals({
             location,
             breed,
             type: animal
-          });
-      
+          });  
           console.log("animals", animals);
       
           setPets(animals || []);
