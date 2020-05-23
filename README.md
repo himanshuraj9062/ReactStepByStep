@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Following
+https://btholt.github.io/complete-intro-to-react-v5/error-boundaries
+
 ## Available Scripts
 
 In the project directory, you can run:
