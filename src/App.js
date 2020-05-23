@@ -8,7 +8,6 @@ import SearchParam from './serachParam';
 
 function App() {    
 
-  //3
   return (
         <div>
           <h1 id = "something">"Adopt Me!"</h1>

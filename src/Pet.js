@@ -1,12 +1,24 @@
-import React from 'react';
+import React from "react";
 
+const Pet = props => {
+  const { name, animal, breed, media, location, id } = props;
 
-export default function  Pet ({name,animal,breed}){
-return (
-    <div>
+  let hero = "http://placecorgi.com/300/300";
+  if (media.length) {
+    hero = media[0].small;
+  }
+
+  return (
+    <a href={`/details/${id}`} className="pet">
+      <div className="image-container">
+        <img src={hero} alt={name} />
+      </div>
+      <div className="info">
         <h1>{name}</h1>
-        <h2>{animal}</h2>
-        <h2>{breed}</h2>
-    </div>
-)
+        <h2>{`${animal} — ${breed} — ${location}`}</h2>
+      </div>
+    </a>
+  );
 };
+
+export default Pet;
